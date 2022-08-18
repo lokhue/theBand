@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="icon" href="./assets/img/icon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="#" class="home"    onclick="hide()">Home</a></li>
+                <li><a href="#band" onclick="hide()">Band</a></li>
+                <li><a href="#tour" onclick="hide()">Tour</a></li>
+                <li><a href="#contact"  onclick="hide()">Contact</a></li>
+                <li>
+                    <a onclick="">
+                        More
+                        <i class="ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="search">
+                <i class="search-button ti-search"></i>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <i class="ti-menu"></i>
+            </div>
+        </div>
+
+        <div id="slider">
+            <div class="text-content">
+                <h2 class="text-heading">New York</h2>
+                <div class="text-description">The atmosphere in New York is lorem ipsum.</div>
+            </div>
+        </div>
+        
+        <div id="content">
+            <div id="band" class="content-section">
+                <div class="text-heading">THE BAND</div>
+                <p class="sub-heading">We love music</p>
+                <p class="about">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="member">
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/band/member.jpg" alt="Member" class="member-img">
+                    </div>
+
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/band/member.jpg" alt="Member" class="member-img">
+                    </div>
+
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/band/member.jpg" alt="Member" class="member-img">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div id="tour" class="tour-section">
+                <div class="content-section">
+                    <div class="text-heading white-text">TOUR DATES</div>
+                    <p class="sub-heading white-text">Remember to book your tickets!</p>
+                    <ul class="tickets-list">
+                        <li>September <span class="sold-out">Sold out</span></li>
+                        <li>October <span class="sold-out">Sold out</span></li>
+                        <li>November <span class="quantity">3</span></li>
+                    </ul>
+                    <div class="row place-ticket">
+                        <div class="col col-3">
+                            <img src="./assets/img/place-perform/newyork.jpg" alt="New York" class="place-img">
+                            <div class="place-body">
+                                <p class="place-name"><b>New York</b></p>
+                                <p class="date-perform">Fri 27 Nov 2016</p>
+                                <p class="text-perform">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="buy-button" onclick="Show()">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="col col-3">
+                            <img src="./assets/img/place-perform/paris.jpg" alt="Paris" class="place-img">
+                            <div class="place-body">
+                                <p class="place-name"><b>Paris</b></p>
+                                <p class="date-perform">Sat 28 Nov 2016</p>
+                                <p class="text-perform">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="buy-button" onclick="Show()">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="col col-3">
+                            <img src="./assets/img/place-perform/sanfran.jpg" alt="San Francisco" class="place-img">
+                            <div class="place-body">
+                                <p class="place-name"><b>San Francisco</b></p>
+                                <p class="date-perform">Sun 29 Nov 2016</p>
+                                <p class="text-perform">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="buy-button"  onclick="Show()">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="content-section">
+                <div class="text-heading">CONTACT</div>
+                <p class="sub-heading">Fan? Drop a note!</p>
+                <!-- start test -->
+                <div class="row">
+                    <div class="col col-2">
+                        <ul class="info-list">
+                            <li><i class="ti-location-pin"></i> Tân Bình, TP Hồ Chí Minh</li>
+                            <li><i class="ti-mobile"></i> Phone: <a href="tel:0362655091">0362655091</a></li>
+                            <li><i class="ti-email"></i> Email: <a href="mailto:anekngiuenhat@mail.com">anekngiuenhat@mail.com</a></li>
+                        </ul>
+                    </div>
+                    
+                    <form class="col col-2">
+                        <div class="row">
+                            <input type="text" class="col col-2 form-contact-item form-top" required placeholder="Name">
+                            <input type="email" class="col col-2 form-contact-item form-top email-form" required placeholder="Email">
+                        </div>
+                        <div class="row">
+                            <input type="text" class="col col-1 form-contact-item" required placeholder="Message">
+                        </div>
+                        <div class="row">
+                            <input type="submit" class="send-button" placeholder="Send" value="Send"></input>
+                        </div>
+                    </form>
+                </div>
+                <!-- end test -->
+            </div>
+        </div>
+
+        <img src="./assets/img/map.jpg" alt="Map" class="map-img">
+
+        <div id="footer">
+            <a class="icon-social-media" href=""><i class="ti-facebook"></i></a>
+            <a class="icon-social-media" href=""><i class="ti-instagram"></i></a>
+            <a class="icon-social-media" href=""><i class="ti-youtube"></i></a>
+            <a class="icon-social-media" href=""><i class="ti-pinterest"></i></a>
+            <a class="icon-social-media" href=""><i class="ti-twitter"></i></a>
+            <a class="icon-social-media" href=""><i class="ti-linkedin"></i></a>
+            <p class="footer-info">Powered by <a href="https://www.w3schools.com/">w3.css</a></p>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-container">
+            <button onclick="Hide()" class="modal-close"><i class="ti-close"></i></button>
+            <header class="modal-header">
+                <i class="ti-bag"></i>
+                Tickets
+            </header>
+
+            <div class="modal-body">
+                <label class="ip-label" for="quantity-tickets">
+                    <i class="ti-shopping-cart"></i> Tickets, $15 per person
+                </label>
+                <input type="text" class="modal-input" placeholder="How many?" id="quantity-tickets">
+                <label class="ip-label" for="email-tickets">
+                    <i class="ti-user"></i> Send to
+                </label>
+                <input type="email" class="modal-input" placeholder="Enter email" id="email-tickets">
+                <button class="modal-button">
+                    Pay<i class="ti-check"></i>
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <p>Need <a href="">help?</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.querySelector(".modal")
+        function Show() {
+            modal.classList.add("open")
+        }
+        function Hide() {
+            modal.classList.remove("open")
+        }
+        modal.addEventListener('click', Hide)
+        document.querySelector(".modal-container").addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+
+        var header = document.getElementById("header")
+        var mobileMenu = document.getElementById("mobileMenu")
+        var headerHeight = header.clientHeight
+        mobileMenu.onclick = function() {
+            isClosed = headerHeight === header.clientHeight
+            console.log(headerHeight)
+            if (isClosed)
+            {
+                header.style.height = "auto"
+            }
+            else
+            {
+                header.style.height = null
+            }
+        }
+        
+        function hide() {
+            header.style.height = null
+            header.style.overflow = "hidden"
+        }
+    </script>
+</body>
+</html>
